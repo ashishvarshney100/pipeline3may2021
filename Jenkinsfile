@@ -1,11 +1,9 @@
 pipeline {
-  agent any {
-      docker { image 'node:7-alpine' }
-  }
+  agent any 
   stages {
       stage('Test') {
         steps {
-          sh 'node --version'
+          echo "Blue Ocean"
         }
       }
    }
